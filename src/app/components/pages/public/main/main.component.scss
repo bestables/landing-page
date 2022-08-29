@@ -32,50 +32,6 @@
       left: calc(50vw - calc(30vh - 4vh));
     }
 
-    .star {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      border-radius: 5px;
-      z-index: $under + $base;
-    }
-
-    .star--small {
-      width: 6px;
-      height: 6px;
-    }
-
-    .star--1 {
-      top: calc(50vh - 400px);
-      left: 100px;
-    }
-
-    .star--2 {
-      top: calc(50vh - 200px);
-      left: 300px;
-    }
-
-    .star--3 {
-      top: calc(50vh - 330px);
-      left: 500px;
-    }
-
-    .star--4 {
-      top: calc(50vh - 280px);
-      left: 900px;
-    }
-
-    .star--5 {
-      top: calc(50vh - 200px);
-      left: 1100px;
-    }
-
-    .star--6 {
-      border-radius: 5px;
-      top: calc(50vh - 450px);
-      left: 1200px;
-    }
-
   }
 
   .body {
@@ -96,7 +52,7 @@
         flex: 16;
         display: flex;
         align-items: center;
-        justify-content:start;
+        justify-content: flex-start;
         font-family: $primary-font-family;
 
         .logo {
@@ -109,7 +65,7 @@
       .nav {
         flex: 7;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
 
         .start-now {
@@ -136,8 +92,6 @@
     }
 
     .img-container {
-      // top:calc(50vh - 15%);
-      // position: absolute;
       display: flex;
       justify-content: center;
       width: 80vw;
