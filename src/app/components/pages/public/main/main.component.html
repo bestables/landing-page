@@ -7,7 +7,7 @@
   <div class="body">
     <div class="header">
       <div class="logo-container">
-        <img class="logo" src="assets/img/logo.png"/>
+        <img class="logo" src="assets/img/logo.svg" alt="Logo" (load)="splashService.removeImageBeingLoaded()"/>
         <div class="title t1-48-bold text-wait">S A N D <span class="tittle-ia text-danger">I A</span></div>
       </div>
       <div class="nav t1-24">
@@ -18,7 +18,7 @@
       <span class="text-wait">Your Crop</span>
     </div>
     <div class="img-container">
-      <img class="img" src="assets/img/crop.png"/>
+      <img class="img" src="assets/img/crop.png" alt="Crop" (load)="splashService.removeImageBeingLoaded()"/>
     </div>
     <div class="label t1-16 text-danger">About</div>
     <p class="copy t1-24 text-grey-800">Don't waste your time and take care of your investments. If you like to have the control in your hands, Sandia is the solution, you will be able to generate a data collection from any field or place that you choose, connecting them with your personal devices. Giving you the oportunity to obtain real-time data of those locations to take faster and more accurate decisions.</p>
@@ -26,7 +26,7 @@
     <div class="services">
       <div class="service">
         <div class="container">
-          <img class="img" src="assets/img/traffic-service.png"/>
+          <img class="img" src="assets/img/traffic-service.png" alt="Traffic Service" (load)="splashService.removeImageBeingLoaded()"/>
         </div>
         <div class="container container--left">
           <h2 class="title">We can monitor your traffic</h2>
@@ -41,13 +41,13 @@
           <button class="start-now start-now--right danger">Start now!</button>
         </div>
         <div class="container">
-          <img class="img" src="assets/img/farm-service.png"/>
+          <img class="img" src="assets/img/farm-service.png" alt="Farm Service" (load)="splashService.removeImageBeingLoaded()"/>
         </div>
       </div>
     </div>
   </div>
   <div class="footer">
-    <img class="logo" src="assets/img/logo.png"/>
+    <img class="logo" src="assets/img/logo.svg" alt="Logo" (load)="splashService.removeImageBeingLoaded()"/>
     <p class="date-text text-grey-500">With love since 2022</p>
   </div>
 </div>

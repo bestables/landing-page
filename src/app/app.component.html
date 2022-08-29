@@ -1,2 +1,4 @@
 <app-splash *ngIf="isLoading"></app-splash>
-<router-outlet *ngIf="!isLoading"></router-outlet>
+<div [ngClass]="{'invisible': isLoading}">
+  <router-outlet></router-outlet>
+</div>
