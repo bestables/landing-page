@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Mont Heavy DEMO';
+    src: url('Mont-HeavyDEMO.eot');
+    src: url('Mont-HeavyDEMO.eot?#iefix') format('embedded-opentype'),
+        url('Mont-HeavyDEMO.woff2') format('woff2'),
+        url('Mont-HeavyDEMO.woff') format('woff'),
+        url('Mont-HeavyDEMO.ttf') format('truetype'),
+        url('Mont-HeavyDEMO.svg#Mont-HeavyDEMO') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+

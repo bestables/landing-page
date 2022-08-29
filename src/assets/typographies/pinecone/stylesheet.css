@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Pinecone';
+    src: url('Pinecone-Regular.eot');
+    src: url('Pinecone-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Pinecone-Regular.woff2') format('woff2'),
+        url('Pinecone-Regular.woff') format('woff'),
+        url('Pinecone-Regular.ttf') format('truetype'),
+        url('Pinecone-Regular.svg#Pinecone-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
