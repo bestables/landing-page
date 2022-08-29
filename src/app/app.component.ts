@@ -10,11 +10,13 @@ import { combineLatest, tap, timer } from 'rxjs';
 })
 export class AppComponent implements OnInit{
   isLoading: boolean = true;
+  isInvisible: boolean = false;
 
   constructor(private splashService: SplashService) { }
 
   ngOnInit(): void {
     window.addEventListener('wheel', this.preventScroll, {passive: false});
+    window.addEventListener('touchstart', this.preventScroll, {passive: false});
 
     const numberOfImageBeingLoaded$ =
       this.splashService.getNumberOfImageBeingLoaded$();
@@ -26,8 +28,10 @@ export class AppComponent implements OnInit{
     combineLatest([numberOfImageBeingLoaded$, minSplashTime$]).subscribe(
       ([numberOfImageBeingLoaded, time]) => {
         if(numberOfImageBeingLoaded === 0 && time === 0){
-          this.isLoading = false;
           window.removeEventListener('wheel', this.preventScroll);
+          window.removeEventListener('touchstart', this.preventScroll);
+          this.isInvisible = true;
+          setTimeout(() => {this.isLoading = false}, 500);
         }
     })
   }

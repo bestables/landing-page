@@ -1,2 +1,2 @@
-<app-splash class="visible" [ngClass]="{'invisible': !isLoading}"></app-splash>
+<app-splash *ngIf="isLoading" class="visible" [ngClass]="{'invisible': isInvisible}"></app-splash>
 <router-outlet></router-outlet>
