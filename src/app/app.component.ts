@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
     const numberOfImageBeingLoaded$ =
       this.splashService.getNumberOfImageBeingLoaded$();
 
-    const minSplashTime$ = timer(2000).pipe(
+    const minSplashTime$ = timer(1000).pipe(
       tap(() => console.log('> min time over'))
     );
 
@@ -36,5 +36,5 @@ export class AppComponent implements OnInit{
     event.preventDefault();
     event.stopPropagation();
     return false;
-}
+  }
 }
